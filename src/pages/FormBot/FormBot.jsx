@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getWorkspaceDataForBot } from "../../services/workSpaceApi";
-import styles from "./FormBot.module.css";
+import styles from "./formBot.module.css";
 
 export default function FormBot() {
   const { formId } = useParams();
