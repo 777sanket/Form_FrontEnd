@@ -3,6 +3,18 @@
     {
       "source": "/form-bot/:formId",
       "destination": "/"
+    },
+    {
+      "source": "/workspace/:formId",
+      "destination": "/"
+    },
+    {
+      "source": "/response/:formId",
+      "destination": "/"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/"
     }
   ]
 }
