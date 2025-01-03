@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.loginContainer {
+  position: relative;
+  background-color: #121212;
+  color: #FFFFFF;
+}
+
+.formContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23%;
+  height: 50%;
+  font-style: 'Poppins', sans-serif;
+  color: #FFFFFF;
+}
+
+.formMain {
+  display: flex;
+  flex-direction: column;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #121212 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.email {
+  height: 38px;
+  border-radius: 12px;
+  background:none;
+  border: 1px solid #ffffff87;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.email::placeholder {
+  color: #636364;
+  padding-left: 8px;
+}
+
+.logBtn {
+  background-color: #1A5FFF;
+  border-radius: 12px;
+  height: 38px;
+  border: none;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px #E9444B40;
+  margin-bottom: 10px;
+}
+
+.logBtn a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.googleBtn {  
+  background-color:#1A5FFF;
+  border-radius: 12px;
+  height: 38px;
+  width: 100%;
+  border: none;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px #E9444B40;
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+  
+
+}
+
+.googleBtn img {
+  position: absolute;
+  left: 17px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background-color: #FFFFFF;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.signup {
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+
+}
+
+
+
+.signup a {
+  color: #1A5FFF;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-left: 2px;
+}

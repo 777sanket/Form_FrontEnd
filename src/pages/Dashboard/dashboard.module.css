@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+
+.dashboardContainer {
+  /* height: 100vh; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  /* width: 100%; */
+  /* background: #1F1F23;
+  margin: 0;
+  padding: 0; */
+}
+
+
+.dashShareMod {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.dashCreateMod {
+  position: fixed;
+  top: 43.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}     
+
+.dashDeleteMod {
+  position: fixed;
+  top: 43.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+
+.dashboardContent {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  /* height: 100%; */
+  /* border: 1px solid rebeccapurple; */
+  align-self: center;
+  /* overflow-y: auto; */
+}
+
+.folderContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px;
+  /* border: 1px solid blanchedalmond; */
+}
+
+.folderBoxMainBtn {
+  background: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box {
+  gap: 0;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 6px 8px;
+  background-color: var(--folder-colorDash);
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.highlighted {
+  /* border: 1px solid wheat; */
+  gap: 0;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 6px 8px;
+  /* background-color: var(--folder-colorDash); */
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+.box img {
+  scale: 1.1;
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.formBotContainer {
+  position: relative;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  margin-top: 10px;
+  /* border: 1px salmon solid; */
+  
+}
+
+.formBoxMain {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 240px;
+  margin: 3px 0;
+  border-radius: 6px;
+  /* background: #FFFFFF80; */
+}
+
+.formBoxMainBtn {
+  background: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 0 -5px;
+}
+
+.mainBoxComponent {
+  /* border: 1px solid #FFFFFF; */
+  height: 90%;
+  width: 90%;
+  background: #1A5FFF;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+.formBox {
+  /* border: 1px solid #FFFFFF; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 280px;
+  width: 240px;
+  margin: 3px 0;
+  border-radius: 6px;
+  /* background: #FFFFFF80; */
+
+}
+
+.forBoxComponent {
+  text-decoration: none;
+  color: #FFFFFF;
+  /* border: 1px solid #FFFFFF; */
+  height: 90%;
+  width: 90%;
+  background: var(--form-colorDash);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxImg  {
+  position: absolute;
+  right: 0;
+  top:0;
+  scale: 1.1;
+}
+
+.linkW {
+  text-decoration: none; /* Remove underline */
+  color: inherit; 
+  display: inline-block; 
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none; /* Completely disables interaction */
+}
+
+.active {
+  border-top: 1px solid var(--border-color);
+  width: 97%;
+}
+
+.email {
+  border-top: 1px solid var(--border-color);
+  width: 97%;
+}
+
+
+/* <Link
+                    to="/workspace"
+                    // style={{ textDecoration: "none", color: "inherit" }}
+                    className={styles.forBoxComponent}
+                  >
+                    <div>{form}</div>
+                  </Link> */

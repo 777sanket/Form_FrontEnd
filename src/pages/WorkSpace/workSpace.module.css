@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+.workSpaceContainer {
+  /* min-height: 1000px; */
+  background-color: var(--workSpaceBg-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mainContainer {
+  display: flex;
+  min-height: 760px;
+}
+
+.formElementSelector {
+  background-color: var(--elementSelectorBg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px -5px #0000000A;
+  width: 350px;
+  min-height: 700px;
+  margin: 15px;
+  padding-top: 70px;
+}
+
+.titleContainer {
+  padding: 0 14px;
+}
+
+.labelGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+  font-size: 14.5px;
+}
+
+.labelGrid div {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--bubbleBorder-color);
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: var(--workSpaceBg-color);
+}
+
+.labelGrid img {
+  margin-right: 10px;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+  font-size: 14.5px;
+}
+
+.inputGrid div {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--bubbleBorder-color);
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: var(--workSpaceBg-color);
+}
+
+.inputGrid img {
+  margin-right: 10px;
+}
+
+.formBuildContainer {
+  position: relative;
+  border: 1px solid #37373E;
+  margin: 15px;
+  width: 1090px;
+  min-height: 600px;
+}
+
+.buildContainer {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  min-height: 200px;
+  /* border: 1px solid #37373E; */
+  margin: 60px 0 0 350px;
+}
+
+.startHeader {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  background-color: var(--elementSelectorBg-color);
+  border: 1px solid var(--bubbleBorder-color);
+  border-radius: 16px;
+  padding: 17px  0px;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.startHeader img {
+  margin: 0 10px 0 30px;
+}
+
+.bubbleBuilder {
+  position: relative;
+  /* border: 1px solid var(--bubbleBorder-color); */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.delImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--bubbleBorder-color);
+  background-color: var(--delBtnBg-color);
+}
+
+
+.bubbleInp {
+  background-color: var(--elementSelectorBg-color);
+  border: 1px solid var(--bubbleBorder-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 17px;
+  width: 85%;
+  font-size: 21px;
+}
+
+.bubbleInp input{
+  margin-top: 10px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #F55050;
+  border-radius: 5px;
+  background-color: var(--bubbleInputBg-color);
+  color: var(--primaryTtext-color);
+}
+
+.inpBuilder {
+  position: relative;
+  /* border: 1px solid var(--bubbleBorder-color); */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.inpDelImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--bubbleBorder-color);
+  background-color: var(--delBtnBg-color);
+}
+
+
+.inpContent {
+  background-color: var(--elementSelectorBg-color);
+  border: 1px solid var(--bubbleBorder-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 17px;
+  width: 85%;
+  font-size: 21px;
+  height: 90px;
+}
+
+.inpContent div {
+  font-size: 12px;
+  color: #555555;
+  margin-top: 10px; 
+}
+
+
+
+.inpButtonBuilder {
+  position: relative;
+  /* border: 1px solid var(--bubbleBorder-color); */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.buttonDelImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--bubbleBorder-color);
+  background-color: var(--delBtnBg-color);
+}
+
+
+.buttonContent {
+  background-color: var(--elementSelectorBg-color);
+  border: 1px solid var(--bubbleBorder-color);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 17px;
+  width: 85%;
+  font-size: 21px;
+}
+
+.buttonContent div{
+  margin-top: 10px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--bubbleInputBg-color);
+  color: var(--primaryTtext-color);
+}

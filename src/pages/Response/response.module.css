@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.responseContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+}
+
+.workspaceNav {
+  width: 100%;
+}
+
+.responseTableContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  overflow-x: auto; /* Horizontal scrolling */
+  overflow-y: auto;
+}
+
+.responseTable {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders do not overlap */
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.responseTable th, 
+.responseTable td {
+  border: 1px solid #ddd; /* Adds borders around cells */
+  padding: 8px; /* Adds padding for better spacing */
+}
+
+.responseTable th {
+  /* background-color: #f4f4f4;  */
+  font-weight: bold; /* Makes header bold */
+  text-transform: capitalize; /* Capitalizes the headers */
+}
+
+
+
+
+
+.responseTable img {
+  border: 1px solid #ccc; /* Optional styling for images */
+  border-radius: 4px; /* Adds rounded corners */
+}
+
+
+.statisticsContainer {
+  display: flex;
+  gap: 100px;
+}
+.statisticsContainer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 16px;
+  padding: 15px 70px 30px 30px;
+  background-color: #323232;
+}
+
+.completionContainer {
+  display: flex;
+  gap: 100px;
+}
+
+.chartContainer {
+  display: flex;
+  height: 300px;
+  font-size: 1.5rem;
+}
+
+.completionText {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+ 
+  font-weight: 500;
+  line-height: 1;
+  
+}
+
+.completionText2  {
+  background-color: #323232;
+  padding: 15px 20px 10px 20px;
+  line-height: 1.2;
+  height: 80px;
+  font-size: 1.6rem;
+  border-radius: 16px;
+}

@@ -1,0 +1,34 @@
+.deleteModContainer {
+  position: relative;
+  height: 160px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: #18181B;
+  border-radius: 24px;
+  border: 1px solid #47474A;
+  color: white;
+}
+
+.text {
+  width: 100%;
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btnContainer {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.actiontxt:hover {
+  cursor: pointer;
+  color: #4B83FF;
+}

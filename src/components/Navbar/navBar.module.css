@@ -1,0 +1,27 @@
+.navbarContainer {
+  position: relative;
+  height: 20%;
+  /* border-bottom: 1px solid #FFFFFF29; */
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 15px 0;
+}
+
+.Menu_Tab  {
+  z-index: 10;
+  
+}
+
+.Share_Btn {
+  position: absolute;
+  right: 60px;
+  margin: 10px;
+}
+
+.Theme_Changer {
+  position: absolute;
+  right: 260px;
+  
+}

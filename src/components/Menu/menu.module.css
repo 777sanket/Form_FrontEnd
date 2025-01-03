@@ -1,0 +1,73 @@
+.menuContainer {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--menu-textColor)
+}
+
+.dropDown {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  display: flex;
+}
+
+.menuHeading {
+  position: absolute;
+  width: 97%;
+  left: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 10px 0  10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItems {
+  position: absolute;
+  /* display: none; */
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  left: 0;
+  background-color: var(--menu-bgColor);
+}
+
+.menuItems li {
+  list-style-type: none;
+  padding: 10px 0  10px 8px;
+  width: 100%;
+}
+
+/* .menuHeading:hover + .menuItems {
+  display: block;
+} */
+
+.menuHeading svg {
+  position: absolute;
+  right: 25px;
+  display: block;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  transform-origin: center; 
+  color: var(--menu-textColor);
+}
+
+.rotatedIcon {
+  transform: rotate(0deg);
+  z-index: 10;
+}
+
+.rotatedIconRight {
+  transform: rotate(180deg);
+}
+
+#drop_Icon {
+  transition: transform 0.3s ease, right 0.3s ease;
+}
+

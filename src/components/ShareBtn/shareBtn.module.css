@@ -1,0 +1,9 @@
+.shareBtnContainer button {
+  height: 40px;
+  width: 90px;
+  background-color: #1A5FFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
