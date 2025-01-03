@@ -1,6 +1,6 @@
 import ShareBtn from "../ShareBtn/ShareBtn";
 import ThemeChanger from "../ThemeChanger/ThemeChanger";
-import styles from "./navbar.module.css";
+import styles from "./navBar.module.css";
 import Menu from "../Menu/Menu";
 // import { Link } from 'react-router-dom'
 
