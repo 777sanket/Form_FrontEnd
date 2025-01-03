@@ -60,14 +60,14 @@
 
 
 .inpName {
-  background-image: url('/Users/sanketwasnik2511/Desktop/Cuvette_WEB_D/Final_Project_Evaluation_1/Test17/frontend/src/assets/frame.png');
+  background-image: url('src/assets/frame.png');
   background-repeat: no-repeat;
   background-position: 3px center;
 }
 
 .inpName2 {
-  background-image: url('/Users/sanketwasnik2511/Desktop/Cuvette_WEB_D/Final_Project_Evaluation_1/Test17/frontend/src/assets/lock.png'),
-                    url('/Users/sanketwasnik2511/Desktop/Cuvette_WEB_D/Final_Project_Evaluation_1/Test17/frontend/src/assets/view.png');
+  background-image: url('src/assets/lock.png'),
+                    url('src/assets/view.png');
   background-repeat: no-repeat, no-repeat;
   background-position: 3px center, right 7px center;
 }
