@@ -1,4 +1,4 @@
-import styles from "./SettingPage.module.css";
+import styles from "./settingPage.module.css";
 import LogoutImg from "../../assets/Logout.png";
 
 export default function SettingPage() {
