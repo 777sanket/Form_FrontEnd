@@ -1,5 +1,5 @@
-import styles from './Logo.module.css';
-import logo from '../../assets/logo.png';
+import styles from "./logo.module.css";
+import logo from "../../assets/logo.png";
 
 export default function Logo() {
   return (
@@ -7,9 +7,7 @@ export default function Logo() {
       <div className={styles.logoImg}>
         <img src={logo} alt="" />
       </div>
-      <div className={styles.logoText}>
-        FormBot
-      </div>
+      <div className={styles.logoText}>FormBot</div>
     </div>
-  )
+  );
 }
