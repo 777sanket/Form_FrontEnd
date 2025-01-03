@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getWorkspaceDataForBot } from "../../services/workSpaceApi";
-import styles from "./formBot.module.css";
+import styles from "./FormBot.module.css";
 
 export default function FormBot() {
   const { formId } = useParams();
@@ -17,6 +17,7 @@ export default function FormBot() {
   const [isStarted, setIsStarted] = useState(false);
 
   const URL = "https://formbot-backend-c4c0.onrender.com/api";
+  // const URL = "http://localhost:3000/api";
   useEffect(() => {
     // Increment views count on page load
     const incrementViews = async () => {
@@ -132,6 +133,23 @@ export default function FormBot() {
       setIsFormFinished(true);
     }
   };
+
+  // useEffect(() => {
+  //   const currentField = formFields[currentIndex];
+  //   if (currentField && currentField.type === "label") {
+  //     setChatMessages((prev) => [
+  //       ...prev,
+  //       {
+  //         type: "label",
+  //         content: currentField.content,
+  //         labelType: currentField.labelType,
+  //       },
+  //     ]);
+  //     setTimeout(() => {
+  //       setCurrentIndex((prev) => prev + 1);
+  //     }, 10);
+  //   }
+  // }, [currentIndex, formFields]);
 
   useEffect(() => {
     const currentField = formFields[currentIndex];
