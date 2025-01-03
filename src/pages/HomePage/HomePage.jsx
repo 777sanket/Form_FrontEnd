@@ -7,7 +7,7 @@ import homeTriangle from "../../assets/homeTriangle.png";
 import leftCircle from "../../assets/leftCircle.png";
 import rightCircle from "../../assets/rightCircle.png";
 import Container from "../../assets/Container.png";
-import hyperlink from "../../assets/hyperlink.png";
+import hyperlink from "../../assets/hyperLink.png";
 export default function HomePage() {
   return (
     <>
