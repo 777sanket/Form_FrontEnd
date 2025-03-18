@@ -137,11 +137,9 @@ export default function WorkSpaceNav({
       </div>
 
       <button
-        className={
-          isSaveDisabled ? styles.shareButton : styles.shareButtonInctive
-        }
+        className={styles.shareButton}
         onClick={handleGenerateShareLink}
-        disabled={!isSaveDisabled}
+        // disabled={!isSaveDisabled}
       >
         Share
       </button>
