@@ -13,7 +13,8 @@
   --bubbleBorder-color: #00000029;
   --delBtnBg-color: white;
   --bubbleInputBg-color: white;
-  
+  --folderBg-color: white;
+  --reposnesBg-color: #323232;
 
 }
 
@@ -22,7 +23,7 @@
   --menu-bgColor: #ffffff;
   --menu-textColor: #000000;
   --border-color : #00000029;
-  --folder-colorDash:  #0f0505a3;
+  --folder-colorDash:  #695d5da3;
   --form-colorDash: #646464a3;
   --primaryTtext-color: #000000;
   --workSpaceBg-color: white;
@@ -32,7 +33,8 @@
   --elementSelectorBg-color: white;
   --delBtnBg-color: white;
   --bubbleInputBg-color: white;
-
+  --folderBg-color: rgb(178, 178, 218);
+  --reposnesBg-color: #a3a4ae;
 
   background-color: #ffffff;
   color: #000000;
@@ -54,7 +56,8 @@
   --bubbleBorder-color: #00000029;
   --delBtnBg-color: #444444;
   --bubbleInputBg-color: #1F1F23;
-
+  --folderBg-color: white;
+  --reposnesBg-color: #323232;
 
   background-color: #121212;
   color: #ffffff;

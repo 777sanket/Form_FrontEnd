@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import { getWorkspaceData, editFormName } from "../../services/workSpaceApi";
 import ThemeChanger from "../ThemeChanger/ThemeChanger";
 
@@ -9,7 +9,7 @@ import styles from "./workSpaceNav.module.css";
 // import { set } from "mongoose";
 
 export default function WorkSpaceNav({
-  formId,
+  // formId,
   setBubbles,
   showFlowView,
   handleSaveFlow,
@@ -19,6 +19,11 @@ export default function WorkSpaceNav({
   const navigate = useNavigate();
   const location = useLocation(); // Get current location
   const isResponsePage = location.pathname.includes("/response");
+  const page = location.pathname;
+  console.log("Current page:", page);
+  console.log("Is response page:", isResponsePage);
+  const { formId } = useParams();
+  console.log("Form1 ID:", formId);
 
   const [activeButton, setActiveButton] = useState(null);
   const [formName, setFormName] = useState(""); // State for form name
@@ -27,10 +32,17 @@ export default function WorkSpaceNav({
 
   const handleClick = (buttonId) => {
     setActiveButton(buttonId);
-
+    console.log("Button clicked:", buttonId);
+    console.log("formId:", formId);
     if (buttonId === 1) {
-      showFlowView(); // Trigger fetching flow data
-      handleFetchFlow(); // Trigger fetching flow data
+      if (page.includes("response")) {
+        console.log("Flow view selected.");
+        navigate(`/workspace/${formId}`);
+      } else {
+        showFlowView(); // Trigger fetching flow data
+        handleFetchFlow();
+      } // Trigger fetching flow data
+      // Redirect to workspace page
     } else if (buttonId === 2) {
       setBubbles([]); // Clear bubbles when switching to response view
       console.log("Response view selected."); // Placeholder for response-related logic

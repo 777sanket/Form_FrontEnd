@@ -8,7 +8,6 @@ export default function DeleteMod({ text, onDelete, closeDeleteModal }) {
 
   return (
     <div className={styles.deleteModContainer}>
-      {/* <h1>DeleteMod</h1> */}
       <div className={styles.text}>
         Are you sure you want to delete this {text} ?
       </div>

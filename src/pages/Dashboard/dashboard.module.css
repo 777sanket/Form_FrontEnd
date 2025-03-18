@@ -95,7 +95,7 @@
   padding: 10px;
   margin: 6px 8px;
   /* background-color: var(--folder-colorDash); */
-  background-color: white;
+  background-color: var( --folderBg-color);
   color: black;
   border-radius: 6px;
   font-family: 'Open Sans', sans-serif;

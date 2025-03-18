@@ -141,6 +141,8 @@
   margin-top: 17px;
   width: 85%;
   font-size: 21px;
+  text-wrap: wrap;
+  overflow: hidden;
 }
 
 .bubbleInp input{
